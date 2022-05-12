@@ -1,25 +1,38 @@
-body {
-  background-color: #f8f9fa;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2vw;
 }
 
-header .section-header {
-  background-color: #f8f9fa;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  padding: 2vw;
+  font-family: fantasy;
+  background-color: antiquewhite;
+  max-width: 80vw;
+  max-height: 20vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2vw;
 }
 
-header .section-header .section-header-title h1 {
-  font-weight: 400;
-}
-
-header .section-header .section-header-content p {
-  font-size: 30px;
-}
-
-main .card .card-body .btn-elegant {
-  position: relative;
+.card .card-body .btn-elegant {
   overflow: hidden;
   color: #fff;
   background-color: #2e2e2e !important;
-  padding: .7rem 1.6rem;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */

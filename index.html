@@ -16,16 +16,43 @@
 </head>
 
 <body>
-  <header>
-    <div class="section-header text-center jumbotron">
-      <div class="section-header-title">
-        <h1 class="display-3">NFA Based Document Text Search</h1>
-      </div>
-      <div class="section-header-content">
-        <p class="lead">By Group 6 & 8 - AI-A B2</p>
+  <main>
+    <div class="header">
+      <h1>NFA Based Document Text Search</h1>
+      <p>By Group 6 & 8 - AI-A B2</p>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3 class="font-weight-bold">
+                Please enter the word you want to search for
+              </h3>
+              <form id="formSearch" class="form-inline mb-4" onsubmit="return false;">
+                <input id="inputSearch" name="inputSearch" class="form-control mr-2" type="text" placeholder="Search"
+                  aria-label="Search" autocomplete="off">
+                <input id="awal" name="inputSearch" class="form-control mr-2" type="number" placeholder="Range Start"
+                  aria-label="Search" autocomplete="off" required>
+                <input id="akhir" name="inputSearch" class="form-control mr-2" type="number" placeholder="Range End"
+                  aria-label="Search" autocomplete="off" required>
+                <button id="submitSearch" class="btn btn-elegant btn-rounded btn-sm my-0" type="submit">Search</button>
+              </form>
+              <div class="row">
+                <div class="col-5">
+                  <div id="quintupleNFA"></div>
+                </div>
+                <div class="col-6 offset-1">
+                  <div id="resultDoc">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
+  </main>
 
 
   <!-- Jquery -->
