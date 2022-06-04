@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
   function getDataFromDoc(numberDoc) {
-    let link = ''.concat('/documents/doc', numberDoc, '.txt');
+    let link = ''.concat('/js/module1/documents/doc', numberDoc, '.txt');
     var doc = {
       data: '',
       number: numberDoc,
@@ -126,6 +126,7 @@ $(document).ready(function () {
     let akhirDoc = $('#akhir').val();
     for (let i = awalDoc; i <= akhirDoc; i++) {
       let dataTemp = getDataFromDoc(i).data.split(' ');
+      console.log(dataTemp)
       for (let j = 0; j < dataTemp.length; j++) {
         let wordTemp = dataTemp[j].split('');
         // console.log('debug 1 : '+wordTemp);
@@ -142,11 +143,14 @@ $(document).ready(function () {
             }
           }
         }
+        console.log(setOfFinalN)
         if (setOfFinalN.includes(curState)) {
+          
           searchResult.push(i);
         }
       }
     }
+    
     return searchResult;
   }
 

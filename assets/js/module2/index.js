@@ -1,10 +1,10 @@
 //Import Enfa class form Enfa.js module
-import Enfa from '/Enfa.js';
+import Enfa from './Enfa.js';
 //Import Stack class from Stack.js module
-import Stack from '/Stack.js';
+import Stack from './Stack.js';
 //Import important utils from Utils.js module
 import {checkKeyword, infix_to_postfix, modify_regex} from './Utils.js';
-
+console.log("I AM IN")
 //Conversion of Postfix Regular expression to Nfa
 const solve_for_nfa = (regex) => {
   //Create a new stack to hold parts of NFAs
