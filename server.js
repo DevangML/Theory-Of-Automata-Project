@@ -24,7 +24,6 @@ app.get('/module2', (req, res) => {
   res.redirect('/module2.html');
 });
 
-//Open server to listen for API calls on PORT
-var server = app.listen(PORT, () => {
-  console.log('Listening on port', PORT);
-});
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
