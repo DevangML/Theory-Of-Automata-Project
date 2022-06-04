@@ -6,9 +6,6 @@ const app = express();
 //Serving the static files present in "src" folder
 app.use(express.static('assets'));
 
-//Defining Port number
-const PORT = 5050;
-
 //Redirecting the default GET api to landing html file
 app.get('/', (req, res) => {
   res.redirect('/index.html');

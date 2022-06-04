@@ -39,7 +39,9 @@ nav > h1 {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
 }
 
 .main > h2 {
@@ -130,11 +132,22 @@ button:active {
 }
 
 #nfa {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vw;
+  max-width: 80vw;
   display: none;
   background-color: #2dc56f;
   text-align: left;
   padding-left: 2rem;
   padding-bottom: 2rem;
+  max-height: max-content;
+  font-size: 3vw;
+  color: black;
+  background-color: aqua;
+  padding: 1vw;
+  border-radius: 1vw;
 }
 
 #nfa > h2 {
@@ -184,7 +197,7 @@ thead {
 tbody,
 tr {
   height: 45px;
-  border-bottom: 1px solid #edf5e0;
+  border-bottom: 1px solid orange;
 }
 
 td,
